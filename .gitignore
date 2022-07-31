@@ -1,0 +1,8 @@
+# Node modules
+node_modules
+
+# .env file
+*.env
+
+# Text files
+*.txt

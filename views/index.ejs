@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Whois</title>
+    <link rel="shortcut icon" href="#" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/index.css">
+    <script defer type="module" src="/js/index.js"></script>
+</head>
+<body>
+    <div class="toast"></div>
+    <audio src="audio/toastsound.mp3" id="toastaudio" style="display: none;"></audio>
+    <div class="container">
+        <h2>URL Extractor</h2>
+        <form action="" method="POST" class="urlForm">
+            <div class="input_url">
+                <textarea name="url" id="domaininput" placeholder="Domain names"></textarea>
+            </div>
+            <div class="input_url_btn">
+                <button type="submit" id="sendurlbtn" class="submit_domain_btn">Extract URL</button>
+            </div>
+        </form>
+        <div class="input_url_info">
+            <!-- <div class="spinner"></div> -->
+            <!-- <textarea name="domain_name_input" id="domaininfo" readonly></textarea> -->
+        </div>
+        <div class="copy_info">
+            <button type="submit" id="clipboardbtn" class="copy_info_btn">Copy to clipboard</button>
+        </div>
+    </div>
+</body>
+</html>
