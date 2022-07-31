@@ -22,7 +22,7 @@ class UrlsInfo {
   async save() {
     try {
       let sql = `
-        INSERT INTO savedurls (
+        INSERT INTO ${process.env.DB_TABLE} (
             url,
             domain,
             updateddate,
@@ -53,7 +53,7 @@ class UrlsInfo {
     try {
       let sql = `
         SELECT *
-        FROM savedurls
+        FROM ${process.env.DB_TABLE}
         WHERE url="${url}" OR domain="${domain}";
         `;
 
